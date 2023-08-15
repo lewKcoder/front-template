@@ -1,0 +1,321 @@
+$color-primary: #3498db;
+$color-primary-dark: #2d85bf;
+$color-primary-dark-2: #20628f;
+
+@mixin style-common() {
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.3s;
+  font-weight: bold;
+  background-color: $color-primary;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16px;
+  padding: 80px;
+}
+
+.button {
+  &_simple {
+    @include style-common;
+
+    &:hover {
+      background-color: #90c1e2;
+    }
+  }
+
+  &_gradient {
+    @include style-common;
+
+    background: linear-gradient(45deg, $color-primary, #9b59b6);
+
+    &:hover {
+      background: linear-gradient(45deg, $color-primary-dark-2, #783a93);
+    }
+  }
+
+  &_outline {
+    @include style-common;
+
+    border: 2px solid $color-primary;
+    background-color: transparent;
+    color: $color-primary;
+
+    &:hover {
+      background-color: $color-primary;
+      color: #fff;
+    }
+  }
+
+  &_fade_hover {
+    @include style-common;
+
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #fff;
+      border: 2px solid $color-primary;
+      color: $color-primary;
+    }
+  }
+
+  &_shadow {
+    @include style-common;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  &_3d {
+    @include style-common;
+
+    border-bottom: 5px solid $color-primary-dark;
+
+    &:hover {
+      margin-top: 3px;
+      background: $color-primary;
+      border-bottom: 2px solid $color-primary-dark;
+    }
+  }
+
+  &_text_shadow {
+    @include style-common;
+
+    color: #216390;
+    border-bottom: 5px solid $color-primary-dark;
+    text-shadow: -0.5px -0.5px 1px #80b4d6, 1px 1px 3px $color-primary-dark-2;
+
+    &:hover {
+      margin-top: 3px;
+
+      background: $color-primary;
+      border-bottom: 2px solid $color-primary-dark;
+    }
+  }
+
+  &_double_border {
+    @include style-common;
+
+    border: 8px double $color-primary;
+    background-color: #87b3d1;
+  }
+
+  &_groove_border {
+    @include style-common;
+
+    border: 6px groove $color-primary;
+  }
+
+  &_inset_border {
+    @include style-common;
+
+    border: 6px inset $color-primary-dark-2;
+
+    &:hover {
+      border: 6px outset $color-primary-dark-2;
+    }
+  }
+
+  &_dashed_border {
+    @include style-common;
+
+    border: 3px dashed $color-primary-dark-2;
+  }
+
+  &_border_3d {
+    @include style-common;
+
+    border: 2px solid #000;
+    position: relative;
+    width: 205px;
+    height: 47px;
+    background-color: $color-primary-dark-2;
+
+    span {
+      width: 100%;
+      height: 100%;
+      left: -2px;
+      top: -8px;
+      border-radius: 4px;
+      box-sizing: initial;
+      line-height: 43px;
+      position: absolute;
+      background-color: $color-primary;
+      border: 2px solid #000;
+      transition: 0.3s;
+
+      &:hover {
+        top: -3px;
+      }
+    }
+  }
+
+  &_stripe {
+    @include style-common;
+
+    background: repeating-linear-gradient(
+      45deg,
+      $color-primary,
+      $color-primary 10px,
+      #7cb1d4 10px,
+      #7cb1d4 20px
+    );
+
+    &:hover {
+      background: repeating-linear-gradient(
+        45deg,
+        #7cb1d4,
+        #7cb1d4 10px,
+        $color-primary 10px,
+        $color-primary 20px
+      );
+    }
+  }
+
+  &_neon {
+    @include style-common;
+
+    background-color: #fff;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    box-shadow: 0 0 5px $color-primary, 0 0 10px $color-primary, 0 0 15px $color-primary,
+      0 0 20px $color-primary;
+
+    &:hover {
+      background-color: #d2eefe;
+    }
+  }
+
+  &_left_to_right_line {
+    @include style-common;
+
+    background-color: $color-primary;
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.2);
+      transition: all 0.3s;
+    }
+
+    &:hover:after {
+      left: 100%;
+    }
+  }
+
+  &_icon_animation {
+    @include style-common;
+
+    background-color: $color-primary;
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: 8px;
+      transition: transform 0.3s;
+    }
+
+    &:hover i {
+      transform: rotate(360deg);
+    }
+  }
+
+  &_border_hover {
+    @include style-common;
+
+    background-color: transparent;
+    color: $color-primary;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: $color-primary;
+      transition: all 0.3s;
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+    }
+
+    &:after {
+      bottom: 0;
+      right: 0;
+    }
+
+    &:hover:before,
+    &:hover:after {
+      width: 100%;
+      transition: all 0.3s;
+    }
+  }
+
+  &_text_animation {
+    @include style-common;
+
+    background-color: $color-primary;
+    color: #000;
+
+    span {
+      display: inline-block;
+      transform: translateY(0);
+      transition: transform 0.3s;
+    }
+
+    &:hover span {
+      transform: translateY(-150%);
+    }
+  }
+
+  &_click_animation {
+    @include style-common;
+
+    background-color: $color-primary;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background-color: #fff;
+      opacity: 0.5;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.5s;
+    }
+
+    &:hover:after {
+      width: 200%;
+      height: 400%;
+    }
+  }
+}

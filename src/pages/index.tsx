@@ -23,24 +23,14 @@ export default function Home() {
 
         <div className={styles.center}>
           <div className={styles.grid}>
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/buttons" className={styles.card}>
               <h2 className={inter.className}>
-                Elements <span>-&gt;</span>
+                Buttons <span>-&gt;</span>
               </h2>
-              <p className={inter.className}>様々なスタイルのボタンやフォームなどを要素単位で。</p>
+              <p className={inter.className}>様々なスタイルのボタン。</p>
             </a>
 
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="" className={styles.card}>
               <h2 className={inter.className}>
                 Templates <span>-&gt;</span>
               </h2>
