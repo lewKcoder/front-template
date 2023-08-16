@@ -30,6 +30,13 @@ export default function Home() {
               <p className={inter.className}>様々なスタイルのボタン。</p>
             </a>
 
+            <a href="/inputs" className={styles.card}>
+              <h2 className={inter.className}>
+                Inputs <span>-&gt;</span>
+              </h2>
+              <p className={inter.className}>様々なスタイルのテキストフォーム。</p>
+            </a>
+
             <a href="" className={styles.card}>
               <h2 className={inter.className}>
                 Templates <span>-&gt;</span>
