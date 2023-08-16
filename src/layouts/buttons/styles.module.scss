@@ -937,6 +937,37 @@ $color-primary-dark-2: #20628f;
       color: #fff;
       border: 2px solid rgba(0, 0, 0, 0);
       box-shadow: 0 0 0px $color-primary;
+
+      span {
+        opacity: 0;
+        transition-delay: 0s;
+
+        &:nth-child(1),
+        &:nth-child(3) {
+          transform: translateX(0);
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+          transform: translateY(0);
+        }
+
+        &:nth-child(1) {
+          left: 50%;
+        }
+
+        &:nth-child(3) {
+          right: 50%;
+        }
+
+        &:nth-child(2) {
+          top: 50%;
+        }
+
+        &:nth-child(4) {
+          bottom: 50%;
+        }
+      }
     }
 
     &::before {
@@ -967,73 +998,42 @@ $color-primary-dark-2: #20628f;
         0 0 50px $color-primary, 0 0 100px $color-primary;
       transition: 0.5s ease-in-out;
       transition-delay: 0.25s;
-    }
 
-    &:hover span {
-      opacity: 0;
-      transition-delay: 0s;
-    }
+      &:nth-child(1),
+      &:nth-child(3) {
+        width: 40px;
+        height: 4px;
+      }
 
-    & span:nth-child(1),
-    & span:nth-child(3) {
-      width: 40px;
-      height: 4px;
-    }
+      &:nth-child(2),
+      &:nth-child(4) {
+        width: 4px;
+        height: 40px;
+      }
 
-    &:hover span:nth-child(1),
-    &:hover span:nth-child(3) {
-      transform: translateX(0);
-    }
+      &:nth-child(1) {
+        top: calc(50% - 2px);
+        left: -50px;
+        transform-origin: left;
+      }
 
-    & span:nth-child(2),
-    & span:nth-child(4) {
-      width: 4px;
-      height: 40px;
-    }
+      &:nth-child(3) {
+        top: calc(50% - 2px);
+        right: -50px;
+        transform-origin: right;
+      }
 
-    &:hover span:nth-child(1),
-    &:hover span:nth-child(3) {
-      transform: translateY(0);
-    }
+      &:nth-child(2) {
+        left: calc(50% - 2px);
+        top: -50px;
+        transform-origin: top;
+      }
 
-    & span:nth-child(1) {
-      top: calc(50% - 2px);
-      left: -50px;
-      transform-origin: left;
-    }
-
-    &:hover span:nth-child(1) {
-      left: 50%;
-    }
-
-    & span:nth-child(3) {
-      top: calc(50% - 2px);
-      right: -50px;
-      transform-origin: right;
-    }
-
-    &:hover span:nth-child(3) {
-      right: 50%;
-    }
-
-    & span:nth-child(2) {
-      left: calc(50% - 2px);
-      top: -50px;
-      transform-origin: top;
-    }
-
-    &:hover span:nth-child(2) {
-      top: 50%;
-    }
-
-    & span:nth-child(4) {
-      left: calc(50% - 2px);
-      bottom: -50px;
-      transform-origin: bottom;
-    }
-
-    &:hover span:nth-child(4) {
-      bottom: 50%;
+      &:nth-child(4) {
+        left: calc(50% - 2px);
+        bottom: -50px;
+        transform-origin: bottom;
+      }
     }
   }
 
