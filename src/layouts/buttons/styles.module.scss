@@ -2,7 +2,12 @@ $color-primary: #3498db;
 $color-primary-dark: #2d85bf;
 $color-primary-dark-2: #20628f;
 
-@mixin style-common($color: #fff, $border-radius: 4px, $background: $color-primary, $border: none) {
+@mixin common-styles(
+  $color: #fff,
+  $border-radius: 4px,
+  $background: $color-primary,
+  $border: none
+) {
   color: $color;
   border-radius: $border-radius;
   background: $background;
@@ -27,7 +32,7 @@ $color-primary-dark-2: #20628f;
 
 .button {
   &_simple {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       background-color: #90c1e2;
@@ -35,7 +40,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_gradient {
-    @include style-common($background: linear-gradient(45deg, $color-primary, #9b59b6));
+    @include common-styles($background: linear-gradient(45deg, $color-primary, #9b59b6));
 
     &:hover {
       background: linear-gradient(45deg, $color-primary-dark-2, #783a93);
@@ -43,7 +48,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_outline {
-    @include style-common(
+    @include common-styles(
       $color: $color-primary,
       $background: transparent,
       $border: 2px solid $color-primary
@@ -56,7 +61,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_fade_hover {
-    @include style-common;
+    @include common-styles;
 
     background-color: $color-primary;
     border: 2px solid $color-primary;
@@ -70,7 +75,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_shadow {
-    @include style-common;
+    @include common-styles;
 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 
@@ -80,7 +85,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_3d {
-    @include style-common;
+    @include common-styles;
 
     border-bottom: 5px solid $color-primary-dark;
 
@@ -92,7 +97,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_text_shadow {
-    @include style-common($color: #216390);
+    @include common-styles($color: #216390);
 
     border-bottom: 5px solid $color-primary-dark;
     text-shadow: -0.5px -0.5px 1px #80b4d6, 1px 1px 3px $color-primary-dark-2;
@@ -106,15 +111,15 @@ $color-primary-dark-2: #20628f;
   }
 
   &_double_border {
-    @include style-common($border: 8px double $color-primary, $background: #87b3d1);
+    @include common-styles($border: 8px double $color-primary, $background: #87b3d1);
   }
 
   &_groove_border {
-    @include style-common($border: 6px groove $color-primary);
+    @include common-styles($border: 6px groove $color-primary);
   }
 
   &_inset_border {
-    @include style-common($border: 6px inset $color-primary-dark-2);
+    @include common-styles($border: 6px inset $color-primary-dark-2);
 
     &:hover {
       border: 6px outset $color-primary-dark-2;
@@ -122,11 +127,11 @@ $color-primary-dark-2: #20628f;
   }
 
   &_dashed_border {
-    @include style-common($border: 3px dashed $color-primary-dark-2);
+    @include common-styles($border: 3px dashed $color-primary-dark-2);
   }
 
   &_border_3d {
-    @include style-common($background: $color-primary-dark-2, $border: 2px solid #000);
+    @include common-styles($background: $color-primary-dark-2, $border: 2px solid #000);
 
     width: 205px;
     height: 47px;
@@ -151,7 +156,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_stripe {
-    @include style-common(
+    @include common-styles(
       $background:
         repeating-linear-gradient(
           45deg,
@@ -174,7 +179,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_left_to_right_line {
-    @include style-common($background: $color-primary);
+    @include common-styles($background: $color-primary);
 
     overflow: hidden;
 
@@ -195,7 +200,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_icon_animation {
-    @include style-common($background: $color-primary);
+    @include common-styles($background: $color-primary);
 
     display: flex;
     align-items: center;
@@ -211,7 +216,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_border_hover {
-    @include style-common($color: $color-primary, $background: transparent);
+    @include common-styles($color: $color-primary, $background: transparent);
 
     &:before,
     &:after {
@@ -241,7 +246,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_text_animation {
-    @include style-common($color: #000, $background: $color-primary);
+    @include common-styles($color: #000, $background: $color-primary);
 
     span {
       display: inline-block;
@@ -255,7 +260,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_ripple_animation {
-    @include style-common($background: $color-primary);
+    @include common-styles($background: $color-primary);
 
     overflow: hidden;
 
@@ -280,7 +285,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_rotate_hover {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       transform: rotate(20deg);
@@ -288,7 +293,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_color_change {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       background-color: #8bc34a;
@@ -296,7 +301,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_scale_hover {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       transform: scale(1.2);
@@ -304,7 +309,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_text_change {
-    @include style-common;
+    @include common-styles;
 
     height: 47px;
     overflow: hidden;
@@ -330,7 +335,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_blur_hover {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       filter: blur(3px);
@@ -338,7 +343,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_flip_hover {
-    @include style-common;
+    @include common-styles;
 
     perspective: 1000px;
 
@@ -361,13 +366,13 @@ $color-primary-dark-2: #20628f;
   }
 
   &_zigzag {
-    @include style-common;
+    @include common-styles;
 
     clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
   }
 
   &_wavy {
-    @include style-common;
+    @include common-styles;
 
     clip-path: polygon(
       0% 15%,
@@ -416,7 +421,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_blink {
-    @include style-common;
+    @include common-styles;
 
     animation: blink 1.5s infinite alternate;
 
@@ -432,7 +437,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_diagonal_slide {
-    @include style-common($border-radius: 0);
+    @include common-styles($border-radius: 0);
 
     &:hover {
       transform: skewX(-20deg);
@@ -440,7 +445,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_diagonal_slide_reverse {
-    @include style-common($border-radius: 0);
+    @include common-styles($border-radius: 0);
 
     transform: skewX(-20deg);
 
@@ -450,7 +455,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_bounce {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       animation: bounce 0.5s;
@@ -474,7 +479,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_neon {
-    @include style-common(
+    @include common-styles(
       $color: $color-primary,
       $background: #fff,
       $border: 1px solid $color-primary
@@ -490,7 +495,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_color_shift {
-    @include style-common($background: linear-gradient(45deg, #f55003, $color-primary));
+    @include common-styles($background: linear-gradient(45deg, #f55003, $color-primary));
 
     background-size: 200% 100%;
     animation: gradient 3s infinite;
@@ -509,7 +514,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_spin {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       transform: rotate(360deg);
@@ -517,7 +522,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_shake {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       animation: shake 0.5s;
@@ -545,7 +550,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_burn {
-    @include style-common($background: linear-gradient(0deg, $color-primary, #a600ff));
+    @include common-styles($background: linear-gradient(0deg, $color-primary, #a600ff));
 
     background-size: 100% 200%;
     background-position: 0% 100%;
@@ -556,7 +561,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_glitch {
-    @include style-common($border-radius: 0);
+    @include common-styles($border-radius: 0);
 
     &:hover {
       animation: glitch 5s;
@@ -592,7 +597,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_3d_shadow {
-    @include style-common($border-radius: 0);
+    @include common-styles($border-radius: 0);
 
     &:before {
       content: '';
@@ -613,7 +618,7 @@ $color-primary-dark-2: #20628f;
     }
   }
   &_pulse {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       animation: pulse 1s infinite;
@@ -633,7 +638,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_swing {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       animation: swing 1s;
@@ -659,7 +664,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_tada {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       animation: tada 1s;
@@ -691,7 +696,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_wobble {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       animation: wobble 1s;
@@ -720,7 +725,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_jello {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       animation: jello 1s;
@@ -747,7 +752,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_heart_beat {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       animation: heartBeat 1.5s infinite;
@@ -774,7 +779,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_flip {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       animation: flip 1s;
@@ -804,7 +809,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_hinge {
-    @include style-common;
+    @include common-styles;
 
     &:hover {
       animation: hinge 2s;
