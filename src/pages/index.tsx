@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <p>サイトレイアウトで使うテンプレートやReact,Nextjsのハンズオンのためのプロジェクト</p>
+          <p>各種要素のスタイリングやReact, Nextjsをハンズオンで確認するためのプロジェクト</p>
           <div>
             <a href="https://twitter.com/lew_yumei" target="_blank" rel="noopener noreferrer">
               By @lew_yumei
