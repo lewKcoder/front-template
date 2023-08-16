@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.scss';
+import Link from 'next/link';
+import { menuItems } from '@/const/urls';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,26 +25,14 @@ export default function Home() {
 
         <div className={styles.center}>
           <div className={styles.grid}>
-            <a href="/buttons" className={styles.card}>
-              <h2 className={inter.className}>
-                Buttons <span>-&gt;</span>
-              </h2>
-              <p className={inter.className}>様々なスタイルのボタン。</p>
-            </a>
-
-            <a href="/inputs" className={styles.card}>
-              <h2 className={inter.className}>
-                Inputs <span>-&gt;</span>
-              </h2>
-              <p className={inter.className}>様々なスタイルのテキストフォーム。</p>
-            </a>
-
-            <a href="" className={styles.card}>
-              <h2 className={inter.className}>
-                Templates <span>-&gt;</span>
-              </h2>
-              <p className={inter.className}>いくつかの要素を組み込んだテンプレート単位で。</p>
-            </a>
+            {menuItems.map(({ href, label, description }) => (
+              <Link key={label} href={href} className={styles.card}>
+                <h2 className={inter.className}>
+                  {label} <span>-&gt;</span>
+                </h2>
+                <p className={inter.className}>{description}</p>
+              </Link>
+            ))}
           </div>
         </div>
       </main>
