@@ -2,17 +2,18 @@ $color-primary: #3498db;
 $color-primary-dark: #2d85bf;
 $color-primary-dark-2: #20628f;
 
-@mixin style-common() {
+@mixin style-common($color: #fff, $border-radius: 4px, $background: $color-primary, $border: none) {
+  color: $color;
+  border-radius: $border-radius;
+  background: $background;
+  border: $border;
   font-size: 18px;
   padding: 12px 24px;
-  border: none;
-  color: #fff;
-  border-radius: 4px;
   transition: all 0.3s;
   font-weight: bold;
-  background-color: $color-primary;
   cursor: pointer;
   box-sizing: border-box;
+  position: relative;
 }
 
 .container {
@@ -20,7 +21,7 @@ $color-primary-dark-2: #20628f;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
   padding: 80px;
 }
 
@@ -34,9 +35,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_gradient {
-    @include style-common;
-
-    background: linear-gradient(45deg, $color-primary, #9b59b6);
+    @include style-common($background: linear-gradient(45deg, $color-primary, #9b59b6));
 
     &:hover {
       background: linear-gradient(45deg, $color-primary-dark-2, #783a93);
@@ -44,11 +43,11 @@ $color-primary-dark-2: #20628f;
   }
 
   &_outline {
-    @include style-common;
-
-    border: 2px solid $color-primary;
-    background-color: transparent;
-    color: $color-primary;
+    @include style-common(
+      $color: $color-primary,
+      $background: transparent,
+      $border: 2px solid $color-primary
+    );
 
     &:hover {
       background-color: $color-primary;
@@ -93,9 +92,8 @@ $color-primary-dark-2: #20628f;
   }
 
   &_text_shadow {
-    @include style-common;
+    @include style-common($color: #216390);
 
-    color: #216390;
     border-bottom: 5px solid $color-primary-dark;
     text-shadow: -0.5px -0.5px 1px #80b4d6, 1px 1px 3px $color-primary-dark-2;
 
@@ -108,22 +106,15 @@ $color-primary-dark-2: #20628f;
   }
 
   &_double_border {
-    @include style-common;
-
-    border: 8px double $color-primary;
-    background-color: #87b3d1;
+    @include style-common($border: 8px double $color-primary, $background: #87b3d1);
   }
 
   &_groove_border {
-    @include style-common;
-
-    border: 6px groove $color-primary;
+    @include style-common($border: 6px groove $color-primary);
   }
 
   &_inset_border {
-    @include style-common;
-
-    border: 6px inset $color-primary-dark-2;
+    @include style-common($border: 6px inset $color-primary-dark-2);
 
     &:hover {
       border: 6px outset $color-primary-dark-2;
@@ -131,19 +122,14 @@ $color-primary-dark-2: #20628f;
   }
 
   &_dashed_border {
-    @include style-common;
-
-    border: 3px dashed $color-primary-dark-2;
+    @include style-common($border: 3px dashed $color-primary-dark-2);
   }
 
   &_border_3d {
-    @include style-common;
+    @include style-common($background: $color-primary-dark-2, $border: 2px solid #000);
 
-    border: 2px solid #000;
-    position: relative;
     width: 205px;
     height: 47px;
-    background-color: $color-primary-dark-2;
 
     span {
       width: 100%;
@@ -165,14 +151,15 @@ $color-primary-dark-2: #20628f;
   }
 
   &_stripe {
-    @include style-common;
-
-    background: repeating-linear-gradient(
-      45deg,
-      $color-primary,
-      $color-primary 10px,
-      #7cb1d4 10px,
-      #7cb1d4 20px
+    @include style-common(
+      $background:
+        repeating-linear-gradient(
+          45deg,
+          $color-primary,
+          $color-primary 10px,
+          #7cb1d4 10px,
+          #7cb1d4 20px
+        )
     );
 
     &:hover {
@@ -187,12 +174,9 @@ $color-primary-dark-2: #20628f;
   }
 
   &_left_to_right_line {
-    @include style-common;
+    @include style-common($background: $color-primary);
 
-    background-color: $color-primary;
-    color: #ffffff;
     overflow: hidden;
-    position: relative;
 
     &:after {
       content: '';
@@ -211,9 +195,8 @@ $color-primary-dark-2: #20628f;
   }
 
   &_icon_animation {
-    @include style-common;
+    @include style-common($background: $color-primary);
 
-    background-color: $color-primary;
     display: flex;
     align-items: center;
 
@@ -228,11 +211,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_border_hover {
-    @include style-common;
-
-    background-color: transparent;
-    color: $color-primary;
-    position: relative;
+    @include style-common($color: $color-primary, $background: transparent);
 
     &:before,
     &:after {
@@ -262,10 +241,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_text_animation {
-    @include style-common;
-
-    background-color: $color-primary;
-    color: #000;
+    @include style-common($color: #000, $background: $color-primary);
 
     span {
       display: inline-block;
@@ -279,10 +255,8 @@ $color-primary-dark-2: #20628f;
   }
 
   &_ripple_animation {
-    @include style-common;
+    @include style-common($background: $color-primary);
 
-    background-color: $color-primary;
-    position: relative;
     overflow: hidden;
 
     &:after {
@@ -334,7 +308,6 @@ $color-primary-dark-2: #20628f;
 
     height: 47px;
     overflow: hidden;
-    position: relative;
 
     span.original {
       display: block;
@@ -368,7 +341,6 @@ $color-primary-dark-2: #20628f;
     @include style-common;
 
     perspective: 1000px;
-    position: relative;
 
     &:before {
       content: 'Hovered!';
@@ -460,9 +432,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_diagonal_slide {
-    @include style-common;
-
-    border-radius: 0;
+    @include style-common($border-radius: 0);
 
     &:hover {
       transform: skewX(-20deg);
@@ -470,11 +440,10 @@ $color-primary-dark-2: #20628f;
   }
 
   &_diagonal_slide_reverse {
-    @include style-common;
-
-    border-radius: 0;
+    @include style-common($border-radius: 0);
 
     transform: skewX(-20deg);
+
     &:hover {
       transform: skewX(0);
     }
@@ -505,11 +474,12 @@ $color-primary-dark-2: #20628f;
   }
 
   &_neon {
-    @include style-common;
+    @include style-common(
+      $color: $color-primary,
+      $background: #fff,
+      $border: 1px solid $color-primary
+    );
 
-    background-color: #fff;
-    color: $color-primary;
-    border: 1px solid $color-primary;
     box-shadow: 0 0 5px $color-primary, 0 0 10px $color-primary, 0 0 15px $color-primary,
       0 0 20px $color-primary;
 
@@ -520,11 +490,10 @@ $color-primary-dark-2: #20628f;
   }
 
   &_color_shift {
-    @include style-common;
+    @include style-common($background: linear-gradient(45deg, #f55003, $color-primary));
 
-    background: linear-gradient(45deg, $color-primary, #9b59b6);
     background-size: 200% 100%;
-    animation: gradient 5s infinite;
+    animation: gradient 3s infinite;
 
     @keyframes gradient {
       0% {
@@ -576,9 +545,8 @@ $color-primary-dark-2: #20628f;
   }
 
   &_burn {
-    @include style-common;
+    @include style-common($background: linear-gradient(0deg, $color-primary, #a600ff));
 
-    background: linear-gradient(0deg, $color-primary, #a600ff);
     background-size: 100% 200%;
     background-position: 0% 100%;
 
@@ -588,9 +556,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_glitch {
-    @include style-common;
-
-    border-radius: 0;
+    @include style-common($border-radius: 0);
 
     &:hover {
       animation: glitch 5s;
@@ -626,10 +592,7 @@ $color-primary-dark-2: #20628f;
   }
 
   &_3d_shadow {
-    @include style-common;
-
-    position: relative;
-    border-radius: 0;
+    @include style-common($border-radius: 0);
 
     &:before {
       content: '';
@@ -647,6 +610,215 @@ $color-primary-dark-2: #20628f;
 
     &:hover:before {
       transform: skewX(20deg);
+    }
+  }
+  &_pulse {
+    @include style-common;
+
+    &:hover {
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &_swing {
+    @include style-common;
+
+    &:hover {
+      animation: swing 1s;
+    }
+
+    @keyframes swing {
+      20% {
+        transform: rotate3d(0, 0, 1, 15deg);
+      }
+      40% {
+        transform: rotate3d(0, 0, 1, -10deg);
+      }
+      60% {
+        transform: rotate3d(0, 0, 1, 5deg);
+      }
+      80% {
+        transform: rotate3d(0, 0, 1, -5deg);
+      }
+      100% {
+        transform: rotate3d(0, 0, 1, 0deg);
+      }
+    }
+  }
+
+  &_tada {
+    @include style-common;
+
+    &:hover {
+      animation: tada 1s;
+    }
+
+    @keyframes tada {
+      0% {
+        transform: scale(1);
+      }
+      10%,
+      20% {
+        transform: scale(0.9) rotate(-3deg);
+      }
+      30%,
+      50%,
+      70%,
+      90% {
+        transform: scale(1.1) rotate(3deg);
+      }
+      40%,
+      60%,
+      80% {
+        transform: scale(1.1) rotate(-3deg);
+      }
+      100% {
+        transform: scale(1) rotate(0);
+      }
+    }
+  }
+
+  &_wobble {
+    @include style-common;
+
+    &:hover {
+      animation: wobble 1s;
+    }
+
+    @keyframes wobble {
+      15% {
+        transform: translateX(-25%) rotate(-5deg);
+      }
+      30% {
+        transform: translateX(20%) rotate(3deg);
+      }
+      45% {
+        transform: translateX(-15%) rotate(-3deg);
+      }
+      60% {
+        transform: translateX(10%) rotate(2deg);
+      }
+      75% {
+        transform: translateX(-5%) rotate(-1deg);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  }
+
+  &_jello {
+    @include style-common;
+
+    &:hover {
+      animation: jello 1s;
+    }
+
+    @keyframes jello {
+      0%,
+      100% {
+        transform: none;
+      }
+      12.5% {
+        transform: skewX(-12.5deg) skewY(-12.5deg);
+      }
+      37.5% {
+        transform: skewX(6.25deg) skewY(6.25deg);
+      }
+      62.5% {
+        transform: skewX(-3.125deg) skewY(-3.125deg);
+      }
+      87.5% {
+        transform: skewX(1.5625deg) skewY(1.5625deg);
+      }
+    }
+  }
+
+  &_heart_beat {
+    @include style-common;
+
+    &:hover {
+      animation: heartBeat 1.5s infinite;
+    }
+
+    @keyframes heartBeat {
+      0%,
+      100% {
+        transform: scale(1);
+      }
+      14% {
+        transform: scale(1.3);
+      }
+      28% {
+        transform: scale(1);
+      }
+      42% {
+        transform: scale(1.3);
+      }
+      70% {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &_flip {
+    @include style-common;
+
+    &:hover {
+      animation: flip 1s;
+    }
+
+    @keyframes flip {
+      0% {
+        transform: perspective(400px) rotateY(0);
+        animation-timing-function: ease-out;
+      }
+      40% {
+        transform: perspective(400px) rotateY(170deg);
+        animation-timing-function: ease-out;
+      }
+      50% {
+        transform: perspective(400px) rotateY(190deg) scale(1);
+        animation-timing-function: ease-in;
+      }
+      80% {
+        transform: perspective(400px) rotateY(360deg) scale(0.95);
+        animation-timing-function: ease-in;
+      }
+      100% {
+        transform: perspective(400px) scale(1);
+      }
+    }
+  }
+
+  &_hinge {
+    @include style-common;
+
+    &:hover {
+      animation: hinge 2s;
+    }
+
+    @keyframes hinge {
+      40% {
+        transform: rotate(30deg);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+      }
+      100% {
+        transform: translate(0, 700px) rotate(60deg);
+      }
     }
   }
 }
