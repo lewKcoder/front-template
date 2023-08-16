@@ -22,16 +22,12 @@ $color-primary-dark-2: #20628f;
 }
 
 .container {
-  padding: 80px;
-}
-
-.content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   gap: 24px;
-  padding-bottom: 56px;
+  padding: 80px;
 }
 
 .button {
@@ -798,25 +794,6 @@ $color-primary-dark-2: #20628f;
     }
   }
 
-  &_hinge {
-    @include common-styles;
-
-    &:hover {
-      animation: hinge 2s;
-    }
-
-    @keyframes hinge {
-      40% {
-        transform: rotate(30deg);
-        transform-origin: top left;
-        animation-timing-function: ease-in-out;
-      }
-      100% {
-        transform: translate(0, 700px) rotate(60deg);
-      }
-    }
-  }
-
   &_text_pop {
     @include common-styles($background: $color-primary);
 
@@ -919,124 +896,6 @@ $color-primary-dark-2: #20628f;
     }
   }
 
-  &_neon_x {
-    @include common-styles(
-      $color: $color-primary,
-      $background: #fff,
-      $border: 2px solid rgb(52, 152, 219, 0.5)
-    );
-
-    text-shadow: 0 0 15px $color-primary;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    transition: 0.5s;
-    z-index: 1;
-
-    &:hover {
-      color: #fff;
-      border: 2px solid rgba(0, 0, 0, 0);
-      box-shadow: 0 0 0px $color-primary;
-
-      span {
-        opacity: 0;
-        transition-delay: 0s;
-
-        &:nth-child(1),
-        &:nth-child(3) {
-          transform: translateX(0);
-        }
-
-        &:nth-child(1),
-        &:nth-child(3) {
-          transform: translateY(0);
-        }
-
-        &:nth-child(1) {
-          left: 50%;
-        }
-
-        &:nth-child(3) {
-          right: 50%;
-        }
-
-        &:nth-child(2) {
-          top: 50%;
-        }
-
-        &:nth-child(4) {
-          bottom: 50%;
-        }
-      }
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: $color-primary;
-      z-index: -1;
-      transform: scale(0);
-      transition: 0.5s;
-    }
-
-    &:hover::before {
-      transform: scale(1);
-      transition-delay: 0.5s;
-      box-shadow: 0 0 10px $color-primary, 0 0 30px $color-primary, 0 0 60px $color-primary;
-    }
-
-    & span {
-      position: absolute;
-      background: $color-primary;
-      pointer-events: none;
-      border-radius: 2px;
-      box-shadow: 0 0 10px $color-primary, 0 0 20px $color-primary, 0 0 30px $color-primary,
-        0 0 50px $color-primary, 0 0 100px $color-primary;
-      transition: 0.5s ease-in-out;
-      transition-delay: 0.25s;
-
-      &:nth-child(1),
-      &:nth-child(3) {
-        width: 40px;
-        height: 4px;
-      }
-
-      &:nth-child(2),
-      &:nth-child(4) {
-        width: 4px;
-        height: 40px;
-      }
-
-      &:nth-child(1) {
-        top: calc(50% - 2px);
-        left: -50px;
-        transform-origin: left;
-      }
-
-      &:nth-child(3) {
-        top: calc(50% - 2px);
-        right: -50px;
-        transform-origin: right;
-      }
-
-      &:nth-child(2) {
-        left: calc(50% - 2px);
-        top: -50px;
-        transform-origin: top;
-      }
-
-      &:nth-child(4) {
-        left: calc(50% - 2px);
-        bottom: -50px;
-        transform-origin: bottom;
-      }
-    }
-  }
-
   &_round_corner {
     @include common-styles($border: solid 2px $color-primary-dark);
 
@@ -1070,96 +929,31 @@ $color-primary-dark-2: #20628f;
     }
   }
 
-  &_move_rectangle {
-    @include common-styles($border: none);
+  &_two_cross_border {
+    @include common-styles($border: none, $border-radius: 0);
 
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    --b: 3px; /* border thickness */
+    --s: 0.15em; /* size of the corner */
 
-    &:hover {
-      letter-spacing: 0.2rem;
-      background: #313131;
-      color: #313131;
-      animation: box 3s infinite;
+    color: $color-primary;
+    --_p: var(--s);
+    background: conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, $color-primary 0)
+      var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+      calc(100% - var(--b) - 2 * var(--_p));
+    transition: 0.3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: 0.2em;
 
-      i::before {
-        width: 15px;
-        left: 20%;
-        animation: move 3s infinite;
-      }
-
-      i::after {
-        width: 15px;
-        left: 80%;
-        animation: move 3s infinite;
-      }
+    &:hover,
+    &:focus-visible {
+      --_p: 0px;
+      outline-color: $color-primary;
+      outline-offset: 0.05em;
     }
 
-    &::before {
-      content: '';
-      position: absolute;
-      inset: 2px;
+    &:active {
       background: $color-primary;
-    }
-
-    span {
-      position: relative;
-      z-index: 1;
-    }
-
-    i {
-      position: absolute;
-      inset: 0;
-      display: block;
-
-      &::before {
-        content: '';
-        position: absolute;
-        width: 10px;
-        height: 2px;
-        left: 80%;
-        top: -2px;
-        border: 2px solid $color-primary-dark-2;
-        background: #90c1e2;
-        transition: 0.2s;
-      }
-
-      &::after {
-        content: '';
-        position: absolute;
-        width: 10px;
-        height: 2px;
-        left: 20%;
-        bottom: -2px;
-        border: 2px solid $color-primary-dark-2;
-        background: #90c1e2;
-        transition: 0.2s;
-      }
-    }
-
-    @keyframes move {
-      0% {
-        transform: translateX(0);
-      }
-      50% {
-        transform: translateX(5px);
-      }
-      100% {
-        transform: translateX(0);
-      }
-    }
-
-    @keyframes box {
-      0% {
-        box-shadow: #27272c;
-      }
-      50% {
-        box-shadow: 0 0 25px $color-primary;
-      }
-      100% {
-        box-shadow: #27272c;
-      }
+      color: #fff;
     }
   }
 }
