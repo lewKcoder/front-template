@@ -42,29 +42,54 @@ const buttonNames = [
   'heart_beat',
   'flip',
   'hinge',
+  'gradient_border',
+  'gradient-text',
 ];
 
 export const Buttons: FunctionComponent = () => {
   return (
     <div className={styles.container}>
-      {buttonNames.map((name) => (
-        <button key={name} className={styles[`button_${name}`]}>
-          button_{name}
+      <div className={styles.content}>
+        {buttonNames.map((name) => (
+          <button key={name} className={styles[`button_${name}`]}>
+            button_{name}
+          </button>
+        ))}
+        <button className={styles.button_border_3d}>
+          <span>button_border_3d</span>
         </button>
-      ))}
-      <button className={styles.button_border_3d}>
-        <span>button_border_3d</span>
-      </button>
-      <button className={styles.button_icon_animation}>
-        <i>icon</i>button_icon_animation
-      </button>
-      <button className={styles.button_text_animation}>
-        <span>button_text_animation</span>
-      </button>
-      <button className={styles.button_text_change}>
-        <span className={styles.original}>button_text_change</span>
-        <span className={styles.hover}>Hello!</span>
-      </button>
+        <button className={styles.button_icon_animation}>
+          <i>icon</i>button_icon_animation
+        </button>
+        <button className={styles.button_text_change}>
+          <span className={styles.original}>button_text_change</span>
+          <span className={styles.hover}>Hello!</span>
+        </button>
+        <button className={styles.button_text_pop}>
+          <span>button_text_pop</span>
+        </button>
+        <button className={styles.button_flat_1}>
+          <span>button_flat_1</span>
+        </button>
+        <button className={styles.button_flat_2}>
+          <span>button_flat_2</span>
+        </button>
+      </div>
+
+      <div className={styles.content}>
+        <button className={styles.button_neon_x}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          button_neon_x
+        </button>
+        <button className={styles.button_round_corner}>button_round_corner</button>
+        <button className={styles.button_move_rectangle}>
+          <span>button_move_rectangle</span>
+          <i></i>
+        </button>
+      </div>
     </div>
   );
 };
