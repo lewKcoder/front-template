@@ -24,7 +24,7 @@ export const Buttons: FunctionComponent = () => {
         </button>
         <button className={styles.button_text_change}>
           <span className={styles.original}>button_text_change</span>
-          <span className={styles.hover}>Hello!</span>
+          <span className={styles.hover}>Click me!</span>
         </button>
       </div>
     </ElementLayout>

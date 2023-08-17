@@ -18,6 +18,7 @@ export const buttonNames = [
   'color_change',
   'scale_hover',
   'blur_hover',
+  'bounce',
   'flip_hover',
   'zigzag',
   'wavy',
