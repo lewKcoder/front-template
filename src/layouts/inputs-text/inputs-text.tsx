@@ -3,7 +3,7 @@ import { inputNames } from './data';
 import { ElementLayout } from '@/layouts/elements-layout';
 import styles from './styles.module.scss';
 
-export const Inputs: FunctionComponent = () => {
+export const InputsText: FunctionComponent = () => {
   return (
     <ElementLayout>
       <div className={styles.container}>

@@ -1,21 +1,21 @@
 export const menuItems = [
   {
-    href: '/buttons',
+    href: '/elements/buttons',
     label: 'Buttons',
     description: '様々なスタイルのボタン',
   },
   {
-    href: '/inputs-text',
+    href: '/elements/inputs-text',
     label: 'Inputs text',
     description: '様々なスタイルのテキストフォーム',
   },
   {
-    href: '/radio',
+    href: '/elements/inputs-radio',
     label: 'Inputs radio',
     description: '様々なスタイルのラジオボタン',
   },
   {
-    href: '/inputs-chackbox',
+    href: '/elements/inputs-chackbox',
     label: 'Inputs chackbox',
     description: '様々なスタイルのチェックボックス',
   },
