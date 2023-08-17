@@ -1,38 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Front Template
 
-## Getting Started
+## このリポジトリについて
 
-First, run the development server:
+このリポジトリではいくつかの使用方法があるので、ご自身の用途に沿って自由に使ってください。
+＊内容は随時アップデートしていきます
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- #### :art:様々なボタンやフォーム要素のスタイル学習や引用
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  実際にサービスで使えそうなスタイルの html 要素を多数表示してます。気になったスタイルをそのままコピーして使用したり、自分なりにカスタムしたり、新しく追加することで理解を深められます。
+  jsx と scss を使用していますが、to html や css でも簡単に引用できるように、中間くらいのニュアンスで書いてます。
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- #### :sparkles:リファクタリング
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+  上記にあるように jsx と scss 以外の技術を使っていても利用しやすくするように、わざと最適化していない箇所がいくつもあります。
+  実装によってはより見やすく、保守性を上げることが出来るので気になった箇所はどんどん修正してみてください。
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- #### :technologist:React のハンズオン速習
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  サイトや動画を見ながらハンズオンをする場合、頻繁に複数の画面を見なければいけないので疲れやすいです。
+  なので、基本的な内容を各ページ、コンポーネントに分け、説明が必要な内容はコメントアウトを活用することで「コードを書く」ことだけに集中できるようにしました。
