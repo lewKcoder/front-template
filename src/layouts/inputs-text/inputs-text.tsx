@@ -50,6 +50,30 @@ export const InputsText: FunctionComponent = () => {
           <input type="text" placeholder="form_19" className={styles.input} />
           <span className={styles.underline} />
         </div>
+        <div className={styles.form_20}>
+          <input type="text" className={styles.input} />
+          <label className={styles.label}>form_20</label>
+          <span className={styles.bg}></span>
+        </div>
+        <div className={styles.form_21}>
+          <input type="text" className={styles.input} />
+          <label className={styles.label}>form_21</label>
+          <span className={styles.border}>
+            <i></i>
+          </span>
+        </div>
+        <div className={styles.form_22}>
+          <input type="text" id="Form22" className={styles.input} />
+          <label htmlFor="Form22" className={styles.label}>
+            form_22
+          </label>
+        </div>
+        <div className={styles.form_23}>
+          <input type="text" placeholder="form_23" className={styles.input} />
+          <span className={styles.underline} />
+        </div>
+        <input type="text" placeholder="form_24" className={styles.form_24} />
+        <input type="text" placeholder="form_25" className={styles.form_25} />
       </div>
     </ElementLayout>
   );
