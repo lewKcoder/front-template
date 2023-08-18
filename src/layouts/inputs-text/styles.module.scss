@@ -513,6 +513,10 @@
       position: relative;
       background: transparent;
       outline: none;
+
+      &:focus {
+        border-color: #0eb158;
+      }
     }
 
     .input ~ .bg {
