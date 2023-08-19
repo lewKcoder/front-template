@@ -1,10 +1,10 @@
 import { FunctionComponent } from 'react';
-import { ElementLayout } from '../elements-layout';
+import { ElementsCommonLayout } from '../elements-common-layout';
 import styles from './styles.module.scss';
 
 export const InputsCheckbox: FunctionComponent = () => {
   return (
-    <ElementLayout>
+    <ElementsCommonLayout>
       <div className={styles.container}>
         <div className={styles.checkbox_1}>
           <input id="Checkbox1" className={styles.checkbox} type="checkbox" aria-hidden="true" />
@@ -383,6 +383,6 @@ export const InputsCheckbox: FunctionComponent = () => {
           </div>
         </div>
       </div>
-    </ElementLayout>
+    </ElementsCommonLayout>
   );
 };

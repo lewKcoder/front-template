@@ -2,7 +2,7 @@ import { Component } from './types';
 import Link from 'next/link';
 import styles from './styles.module.scss';
 
-export const ElementLayout: Component = (props) => {
+export const ElementsCommonLayout: Component = (props) => {
   const { children } = props;
 
   return (

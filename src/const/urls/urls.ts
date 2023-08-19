@@ -1,4 +1,4 @@
-export const menuItems = [
+export const elementsMenuItems = [
   {
     href: '/elements/buttons',
     label: 'Buttons',
@@ -23,5 +23,13 @@ export const menuItems = [
     href: '/elements/cards',
     label: 'Cards',
     description: '様々なレイアウトのカード要素',
+  },
+];
+
+export const reactMenuItems = [
+  {
+    href: '/react/use-state',
+    label: 'useState',
+    description: 'カウント機能を例にして学ぶ',
   },
 ];

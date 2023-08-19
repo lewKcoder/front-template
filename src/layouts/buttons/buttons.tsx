@@ -1,10 +1,10 @@
 import { FunctionComponent } from 'react';
 import styles from './styles.module.scss';
-import { ElementLayout } from '@/layouts/elements-layout';
+import { ElementsCommonLayout } from '@/layouts/elements-common-layout';
 
 export const Buttons: FunctionComponent = () => {
   return (
-    <ElementLayout>
+    <ElementsCommonLayout>
       <div className={styles.container}>
         <button className={styles.button_1}>Button 1</button>
         <button className={styles.button_2}>Button 2</button>
@@ -85,6 +85,6 @@ export const Buttons: FunctionComponent = () => {
           <span className={styles.text}>Button 59</span>
         </button>
       </div>
-    </ElementLayout>
+    </ElementsCommonLayout>
   );
 };

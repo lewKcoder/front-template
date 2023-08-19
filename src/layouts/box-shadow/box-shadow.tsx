@@ -1,10 +1,10 @@
 import { FunctionComponent } from 'react';
-import { ElementLayout } from '../elements-layout';
+import { ElementsCommonLayout } from '../elements-common-layout';
 import styles from './styles.module.scss';
 
 export const BoxShadow: FunctionComponent = () => {
   return (
-    <ElementLayout>
+    <ElementsCommonLayout>
       <div className={styles.container}>
         <div className={styles.box_shadow_1}>box_shadow_1</div>
         <div className={styles.box_shadow_2}>box_shadow_2</div>
@@ -100,6 +100,6 @@ export const BoxShadow: FunctionComponent = () => {
         <div className={styles.box_shadow_92}>box_shadow_92</div>
         <div className={styles.box_shadow_93}>box_shadow_93</div>
       </div>
-    </ElementLayout>
+    </ElementsCommonLayout>
   );
 };

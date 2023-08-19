@@ -1,10 +1,10 @@
 import { FunctionComponent } from 'react';
-import { ElementLayout } from '../elements-layout';
+import { ElementsCommonLayout } from '../elements-common-layout';
 import styles from './styles.module.scss';
 
 export const Cards: FunctionComponent = () => {
   return (
-    <ElementLayout>
+    <ElementsCommonLayout>
       <div className={styles.container}>
         <div className={styles.card_1}>
           <img src="/sumple.jpg" alt="Card Image" />
@@ -184,6 +184,6 @@ export const Cards: FunctionComponent = () => {
           <p>Card description goes here.</p>
         </div>
       </div>
-    </ElementLayout>
+    </ElementsCommonLayout>
   );
 };

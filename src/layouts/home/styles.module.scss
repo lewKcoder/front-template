@@ -6,6 +6,17 @@
   padding: 6rem;
 }
 
+.content {
+  width: 100%;
+  margin-bottom: 56px;
+}
+
+.content_title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
 .description {
   display: flex;
   justify-content: space-between;
@@ -14,6 +25,7 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+  margin-bottom: 96px;
 }
 
 .description a {
@@ -36,8 +48,6 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
   gap: 1rem;
-  width: var(--max-width);
-  max-width: 100%;
 }
 
 .card {
@@ -55,22 +65,15 @@
 
 .card h2 {
   font-weight: 600;
+  font-size: 18px;
   margin-bottom: 0.7rem;
 }
 
 .card p {
   margin: 0;
   color: #8e8e8e;
-  font-size: 0.9rem;
+  font-size: 14px;
   line-height: 1.5;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -86,8 +89,8 @@
 }
 
 @media (max-width: 700px) {
-  .content {
-    padding: 4rem;
+  .container {
+    padding: 100px 24px;
   }
 
   .grid {
@@ -103,10 +106,6 @@
 
   .card h2 {
     margin-bottom: 0.5rem;
-  }
-
-  .center {
-    padding: 8rem 0 6rem;
   }
 
   .description {
