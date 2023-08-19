@@ -1,6 +1,7 @@
 # Front Template
 
-![3245trf](https://github.com/lewKcoder/front-template/assets/96109567/aa3c614e-b78c-4851-b9c4-4c13e08dfe07)
+
+![fwefewt](https://github.com/lewKcoder/front-template/assets/96109567/5200b50c-d0ba-4f29-b12b-838cfdc21e7e)
 
 
 ## このリポジトリについて
