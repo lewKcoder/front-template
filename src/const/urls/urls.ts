@@ -20,7 +20,7 @@ export const menuItems = [
     description: '様々なスタイルのボックスシャドウ',
   },
   {
-    href: '/',
+    href: '/elements/cards',
     label: 'Cards',
     description: '様々なレイアウトのカード要素',
   },

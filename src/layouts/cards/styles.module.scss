@@ -1,0 +1,679 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 48px;
+  padding: 80px;
+}
+
+.card {
+  // .card_1
+  &_1 {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  // .card_2
+  &_2 {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    h2,
+    p,
+    button {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  // .card_3
+  &_3 {
+    width: 300px;
+    .media_content {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    h2,
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  // .card_4
+  &_4 {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    h2,
+    p,
+    button {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  // .card_5
+  &_5 {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    h2,
+    p {
+      margin-top: 20px;
+    }
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .button2 {
+        background-color: #0056b2;
+      }
+    }
+  }
+
+  // .card_6
+  &_6 {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    .feature_icon {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    h2,
+    p {
+      margin-top: 20px;
+    }
+  }
+
+  // .card_7
+  &_7 {
+    position: relative;
+    width: 300px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: opacity 0.3s;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    &:hover {
+      img {
+        opacity: 0.7;
+      }
+      .overlay {
+        opacity: 1;
+      }
+    }
+  }
+
+  // .card_8
+  &_8 {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    .profile_image {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h2,
+    p,
+    button {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  // .card_9
+  &_9 {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    h2,
+    p,
+    .price,
+    button {
+      margin-top: 20px;
+    }
+    .price {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  // .card_10
+  &_10 {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    h2,
+    p,
+    .date,
+    button {
+      margin-top: 20px;
+    }
+    .date {
+      font-style: italic;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  // .card_11
+  &_11 {
+    display: flex;
+    width: 600px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    .media_content {
+      flex: 1;
+      .img {
+        background-image: url('/sumple.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 0 0 8px;
+      }
+    }
+    .text_content {
+      flex: 2;
+      padding: 20px;
+      p {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  // .card_12
+  &_12 {
+    display: flex;
+    width: 600px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    .action_image {
+      flex: 1;
+      .img {
+        background-image: url('/sumple.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 0 0 8px;
+      }
+    }
+    .action_content {
+      flex: 2;
+      padding: 20px;
+      h2,
+      p,
+      button {
+        margin-top: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // .card_13
+  &_13 {
+    display: flex;
+    width: 600px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    .product_image {
+      flex: 1;
+      .img {
+        background-image: url('/sumple.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 0 0 8px;
+      }
+    }
+    .product_content {
+      flex: 2;
+      padding: 20px;
+      h2,
+      p,
+      .price,
+      button {
+        margin-top: 20px;
+      }
+      .price {
+        font-weight: bold;
+        font-size: 24px;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // .card_14
+  &_14 {
+    display: flex;
+    width: 600px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    align-items: center;
+    .profile_image {
+      flex: 1;
+      img {
+        display: block;
+        margin: auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+    }
+    .profile_content {
+      flex: 2;
+      padding: 20px;
+      h2,
+      p,
+      button {
+        margin-top: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // .card_15
+  &_15 {
+    width: 300px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    h2,
+    p,
+    button {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  // .card_16
+  &_16 {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  // .card_17
+  &_17 {
+    width: 300px;
+    padding: 20px;
+    background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
+    color: #fff;
+    border-radius: 8px;
+    h2,
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  // .card_18
+  &_18 {
+    position: relative;
+    width: 300px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .overlay_text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+      h2,
+      p {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  // .card_19
+  &_19 {
+    display: flex;
+    width: 600px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    .sidebar {
+      flex: 1;
+      background-color: #e5f2ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100px;
+        height: 80px;
+      }
+    }
+    .content {
+      flex: 3;
+      padding: 20px;
+      h2,
+      p {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  // .card_20
+  &_20 {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    .rounded_image {
+      width: 100%;
+      padding-top: 100%; // 1:1 aspect ratio
+      position: relative;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h2,
+    p {
+      margin-top: 20px;
+    }
+  }
+
+  // .card_21
+  &_21 {
+    width: 300px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    .top_image,
+    .bottom_image {
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .top_image {
+      img {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+    }
+    h2 {
+      padding: 20px;
+    }
+    p {
+      padding: 0 20px 20px;
+    }
+  }
+
+  // .card_22
+  &_22 {
+    display: flex;
+    width: 600px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    .side_text {
+      flex: 1;
+      padding: 20px;
+      background-color: #f5f5f5;
+      h2,
+      p {
+        margin-top: 20px;
+      }
+    }
+    .main_content {
+      flex: 2;
+      .img {
+        background-image: url('/sumple.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 0 8px 8px 0;
+      }
+    }
+  }
+
+  // .card_23
+  &_23 {
+    position: relative;
+    width: 300px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .floating_button {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // .card_24
+  &_24 {
+    position: relative;
+    width: 300px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    .ribbon {
+      position: absolute;
+      top: 10px;
+      left: -10px;
+      padding: 5px 15px;
+      background-color: #e74c3c;
+      color: #fff;
+      font-weight: bold;
+      transform: rotate(-45deg);
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px 8px 0 0;
+    }
+    h2 {
+      padding: 20px;
+    }
+    p {
+      padding: 0 20px 20px;
+    }
+  }
+}
