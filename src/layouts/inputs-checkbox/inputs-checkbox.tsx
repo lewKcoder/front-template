@@ -238,6 +238,150 @@ export const InputsCheckbox: FunctionComponent = () => {
             </span>
           </label>
         </div>
+        <div className={styles.checkbox_26}>
+          <label className={styles.label}>
+            <input type="checkbox" className={styles.checkbox} />
+            <div className={styles.checkmark}></div>
+          </label>
+        </div>
+        <div className={styles.checkbox_27}>
+          <label className={styles.label}>
+            <input type="checkbox" className={styles.checkbox} />
+            <span className={styles.slider}></span>
+          </label>
+        </div>
+        <div className={styles.checkbox_28}>
+          <label className={styles.label}>
+            <input type="checkbox" className={styles.checkbox} />
+            <div className={styles.checkmark}></div>
+          </label>
+        </div>
+        <div className={styles.checkbox_29}>
+          <label className={styles.label}>
+            <input type="checkbox" className={styles.checkbox} />
+            <div className={styles.checkmark}></div>
+          </label>
+        </div>
+        <div className={styles.checkbox_30}>
+          <label className={styles.label}>
+            <input type="checkbox" className={styles.checkbox} />
+            <span className={styles.slider}></span>
+          </label>
+        </div>
+        <div className={styles.checkbox_31}>
+          <input type="checkbox" className={styles.checkbox} id="Checkbox31" />
+          <label htmlFor="Checkbox31" className={styles.label}>
+            <svg viewBox="0 0 65 65" height="30" width="30">
+              <rect x="7" y="7" width="50" height="50" stroke="black" fill="none" />
+              <g transform="translate(-23,-967.36216)" id="layer1-60">
+                <path
+                  id="path4146"
+                  d="m 55,978 c -73,19 46,71 15,2 C 60,959 13,966 30,1007 c 12,30 61,13 46,-23"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="3"
+                  className={styles.path1}
+                />
+              </g>
+            </svg>
+            <span>Checkbox</span>
+          </label>
+        </div>
+        <div className={styles.checkbox_32}>
+          <input type="checkbox" className={styles.checkbox} id="Checkbox32" />
+          <label htmlFor="Checkbox32" className={styles.label}>
+            <svg width="45" height="45" viewBox="0 0 95 95">
+              <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />
+              <g transform="translate(0,-952.36222)">
+                <path
+                  d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4 "
+                  stroke="black"
+                  stroke-width="3"
+                  fill="none"
+                  className={styles.path1}
+                />
+              </g>
+            </svg>
+            <span>Checkbox</span>
+          </label>
+        </div>
+        <div className={styles.checkbox_33}>
+          <input type="checkbox" className={styles.checkbox} id="Checkbox33" />
+          <label htmlFor="Checkbox33" className={styles.label}>
+            <svg width="43" height="43" viewBox="0 0 90 90">
+              <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />
+              <g transform="translate(0,-952.36218)">
+                <path
+                  d="m 13,983 c 33,6 40,26 55,48 "
+                  stroke="black"
+                  stroke-width="3"
+                  className={styles.path1}
+                  fill="none"
+                />
+                <path
+                  d="M 75,970 C 51,981 34,1014 25,1031 "
+                  stroke="black"
+                  stroke-width="3"
+                  className={styles.path1}
+                  fill="none"
+                />
+              </g>
+            </svg>
+            <span>Checkbox</span>
+          </label>
+        </div>
+        <div className={styles.checkbox_34}>
+          <label className={styles.label}>
+            <input type="checkbox" className={styles.checkbox} />
+            <span className={styles.slider}></span>
+          </label>
+        </div>
+        <div className={styles.checkbox_35}>
+          <label className={styles.label}>
+            <input type="checkbox" className={styles.checkbox} />
+            <span className={styles.slider}></span>
+          </label>
+        </div>
+        <div className={styles.checkbox_36}>
+          <input type="checkbox" id="Checkbox36" className={styles.checkbox} />
+          <label htmlFor="Checkbox36" className={styles.label}>
+            <svg
+              className={styles.checkboxSvg}
+              viewBox="0 0 200 200"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask id="path-1-inside-1_476_5-37" fill="white">
+                <rect width="200" height="200" />
+              </mask>
+              <rect
+                width="200"
+                height="200"
+                className={styles.checkboxBox}
+                strokeWidth="40"
+                mask="url(#path-1-inside-1_476_5-37)"
+              />
+              <path
+                className={styles.checkboxTick}
+                d="M52 111.018L76.9867 136L149 64"
+                strokeWidth="15"
+              />
+            </svg>
+            <span className={styles.labelText}>Checkbox</span>
+          </label>
+        </div>
+        <div className={styles.checkbox_37}>
+          <div className={styles.checkbox_content}>
+            <input type="checkbox" id="Checkbox37" className={styles.checkbox} />
+            <label htmlFor="Checkbox37" className={styles.label}></label>
+          </div>
+        </div>
+        <div className={styles.checkbox_38}>
+          <div className={styles.round}>
+            <input type="checkbox" id="Checkbox38" className={styles.checkbox} />
+            <label htmlFor="Checkbox38" className={styles.label}></label>
+          </div>
+        </div>
       </div>
     </ElementLayout>
   );
