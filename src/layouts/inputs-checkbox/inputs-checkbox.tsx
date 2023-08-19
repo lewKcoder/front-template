@@ -27,7 +27,7 @@ export const InputsCheckbox: FunctionComponent = () => {
                 <use xlinkHref="#check-4"></use>
               </svg>
             </span>
-            <span>Morning</span>
+            <span>Checkbox 4</span>
           </label>
           <svg className={styles.svg}>
             <symbol id="check-4" viewBox="0 0 12 10">
@@ -47,7 +47,7 @@ export const InputsCheckbox: FunctionComponent = () => {
         <div className={styles.checkbox_6}>
           <input type="checkbox" id="Checkbox6" className={styles.checkbox} />
           <label htmlFor="Checkbox6" className={styles.label}>
-            To-do
+            Checkbox 6
           </label>
         </div>
         <div className={styles.checkbox_7}>
@@ -88,7 +88,7 @@ export const InputsCheckbox: FunctionComponent = () => {
         <div className={styles.checkbox_10}>
           <input type="checkbox" id="Checkbox10" className={styles.checkbox} />
           <label htmlFor="Checkbox10" className={styles.label}>
-            <span></span>Checkbox
+            <span></span>Checkbox 10
           </label>
         </div>
         <div className={styles.checkbox_11}>
@@ -103,7 +103,7 @@ export const InputsCheckbox: FunctionComponent = () => {
             <use xlinkHref="#checkmark-28" />
           </svg>
           <label htmlFor="Checkbox12" className={styles.label}>
-            Checkbox
+            Checkbox 12
           </label>
           <svg xmlns="http://www.w3.org/2000/svg" style={{ display: 'none' }}>
             <symbol id="checkmark-28" viewBox="0 0 24 24">
@@ -160,7 +160,7 @@ export const InputsCheckbox: FunctionComponent = () => {
                 <path d="M4 14l8 7L24 7"></path>
               </svg>
             </span>
-            <p className={styles.checkbox_textwrapper}>Checkbox</p>
+            <p className={styles.checkbox_textwrapper}>Checkbox 15</p>
           </label>
         </div>
         <div className={styles.checkbox_16}>
@@ -199,7 +199,7 @@ export const InputsCheckbox: FunctionComponent = () => {
                 <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
               </svg>
             </span>
-            <span>Checkbox</span>
+            <span>Checkbox 20</span>
           </label>
         </div>
         <div className={styles.checkbox_21}>
@@ -214,7 +214,7 @@ export const InputsCheckbox: FunctionComponent = () => {
         <div className={styles.checkbox_22}>
           <input type="checkbox" id="Checkbox22" className={styles.checkbox} />
           <label htmlFor="Checkbox22" className={styles.label}>
-            Check this
+            Checkbox 22
           </label>
         </div>
         <div className={styles.checkbox_23}>
@@ -284,7 +284,7 @@ export const InputsCheckbox: FunctionComponent = () => {
                 />
               </g>
             </svg>
-            <span>Checkbox</span>
+            <span>Checkbox{''}31</span>
           </label>
         </div>
         <div className={styles.checkbox_32}>
@@ -302,7 +302,7 @@ export const InputsCheckbox: FunctionComponent = () => {
                 />
               </g>
             </svg>
-            <span>Checkbox</span>
+            <span>Checkbox 32</span>
           </label>
         </div>
         <div className={styles.checkbox_33}>
@@ -327,7 +327,7 @@ export const InputsCheckbox: FunctionComponent = () => {
                 />
               </g>
             </svg>
-            <span>Checkbox</span>
+            <span>Checkbox 33</span>
           </label>
         </div>
         <div className={styles.checkbox_34}>
@@ -367,7 +367,7 @@ export const InputsCheckbox: FunctionComponent = () => {
                 strokeWidth="15"
               />
             </svg>
-            <span className={styles.labelText}>Checkbox</span>
+            <span className={styles.labelText}>Checkbox 36</span>
           </label>
         </div>
         <div className={styles.checkbox_37}>

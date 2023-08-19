@@ -3,11 +3,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 48px;
+  gap: 56px;
   padding: 80px;
 }
 
 .checkbox {
+  // .checkbox_1
   &_1 {
     .checkbox {
       margin: 0;
@@ -98,6 +99,7 @@
     }
   }
 
+  // .checkbox_2
   &_2 {
     .checkbox {
       appearance: none;
@@ -159,6 +161,7 @@
     }
   }
 
+  // .checkbox_3
   &_3 {
     .checkbox {
       visibility: hidden;
@@ -228,6 +231,7 @@
     }
   }
 
+  // .checkbox_4
   &_4 {
     .label {
       -webkit-user-select: none;
@@ -320,6 +324,7 @@
     }
   }
 
+  // .checkbox_5
   &_5 {
     .checkbox {
       display: none;
@@ -438,6 +443,7 @@
     }
   }
 
+  // .checkbox_6
   &_6 {
     --text: #414856;
     --check: #4f29f0;
@@ -622,6 +628,7 @@
     }
   }
 
+  // .checkbox_7
   &_7 {
     position: relative;
 
@@ -723,6 +730,7 @@
     }
   }
 
+  // .checkbox_8
   &_8 {
     .checkbox_content {
       position: relative;
@@ -768,6 +776,7 @@
     }
   }
 
+  // .checkbox_9
   &_9 {
     .label {
       display: inline-block;
@@ -819,6 +828,7 @@
     }
   }
 
+  // .checkbox_10
   &_10 {
     .checkbox {
       display: table-cell;
@@ -927,6 +937,7 @@
     }
   }
 
+  // .checkbox_11
   &_11 {
     outline: none;
 
@@ -1035,6 +1046,7 @@
     }
   }
 
+  // .checkbox_12
   &_12 {
     --size: 25px;
     position: relative;
@@ -1105,6 +1117,7 @@
     }
   }
 
+  // .checkbox_13
   &_13 {
     .checkbox_content {
       --bg: #fff;
@@ -1184,6 +1197,7 @@
     }
   }
 
+  // .checkbox_14
   &_14 {
     position: relative;
     display: inline-block;
@@ -1252,6 +1266,7 @@
     }
   }
 
+  // .checkbox_15
   &_15 {
     --s-xsmall: 0.625em;
     --s-small: 1.2em;
@@ -1362,6 +1377,7 @@
     }
   }
 
+  // .checkbox_16
   &_16 {
     --blue: #0d7eff;
     --g08: #e1e5eb;
@@ -1477,6 +1493,7 @@
     }
   }
 
+  // .checkbox_17
   &_17 {
     .label {
       display: block;
@@ -1510,6 +1527,7 @@
     }
   }
 
+  // .checkbox_18
   &_18 {
     --borderColor: #48c;
     --borderWidth: 0.125em;
@@ -1576,6 +1594,7 @@
     }
   }
 
+  // .checkbox_19
   &_19 {
     .checkbox {
       display: none;
@@ -1729,6 +1748,7 @@
     }
   }
 
+  // .checkbox_20
   &_20 {
     .checkbox {
       display: none;
@@ -1817,6 +1837,7 @@
     }
   }
 
+  // .checkbox_21
   &_21 {
     .checkbox {
       display: none;
@@ -1887,6 +1908,7 @@
     }
   }
 
+  // .checkbox_22
   &_22 {
     .checkbox {
       display: none;
@@ -1935,6 +1957,7 @@
     }
   }
 
+  // .checkbox_23
   &_23 {
     --gray: #636e72;
     --very-light-gray: #eee;
@@ -1982,6 +2005,7 @@
     }
   }
 
+  // .checkbox_24
   &_24 {
     --size: 90px;
 
@@ -2033,6 +2057,7 @@
     }
   }
 
+  // .checkbox_25
   &_25 {
     .checkbox {
       visibility: hidden;
@@ -2105,6 +2130,7 @@
     }
   }
 
+  // .checkbox_26
   &_26 {
     .checkbox {
       visibility: hidden;
@@ -2157,6 +2183,7 @@
     }
   }
 
+  // .checkbox_27
   &_27 {
     .checkbox {
       visibility: hidden;
@@ -2210,6 +2237,7 @@
     }
   }
 
+  // .checkbox_28
   &_28 {
     *,
     ::after,
@@ -2268,6 +2296,7 @@
     }
   }
 
+  // .checkbox_29
   &_29 {
     .checkbox {
       visibility: hidden;
@@ -2328,6 +2357,7 @@
     }
   }
 
+  // .checkbox_30
   &_30 {
     .checkbox {
       visibility: hidden;
@@ -2406,6 +2436,7 @@
     }
   }
 
+  // .checkbox_31
   &_31 {
     position: relative;
     display: block;
@@ -2441,6 +2472,7 @@
     }
   }
 
+  // .checkbox_32
   &_32 {
     position: relative;
     display: block;
@@ -2475,6 +2507,7 @@
     }
   }
 
+  // .checkbox_33
   &_33 {
     .checkbox {
       visibility: hidden;
@@ -2507,6 +2540,7 @@
     }
   }
 
+  // .checkbox_34
   &_34 {
     .checkbox {
       visibility: hidden;
@@ -2555,6 +2589,7 @@
     }
   }
 
+  // .checkbox_35
   &_35 {
     .checkbox {
       visibility: hidden;
@@ -2612,6 +2647,7 @@
     }
   }
 
+  // .checkbox_36
   &_36 {
     .checkbox {
       display: none;
@@ -2653,6 +2689,7 @@
     }
   }
 
+  // .checkbox_37
   &_37 {
     .checkbox_content {
       --size: 40px;
@@ -2751,6 +2788,7 @@
     }
   }
 
+  // .checkbox_38
   &_38 {
     .round {
       position: relative;
