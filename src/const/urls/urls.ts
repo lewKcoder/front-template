@@ -25,11 +25,3 @@ export const elementsMenuItems = [
     description: '様々なレイアウトのカード要素',
   },
 ];
-
-export const reactMenuItems = [
-  {
-    href: '/react/use-state',
-    label: 'useState',
-    description: 'カウント機能を例にして学ぶ',
-  },
-];

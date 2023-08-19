@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import { elementsMenuItems, reactMenuItems } from '@/const/urls';
+import { elementsMenuItems } from '@/const/urls';
 import { Inter } from 'next/font/google';
 import styles from './styles.module.scss';
 import Link from 'next/link';
@@ -22,19 +22,6 @@ export const Home: FunctionComponent = () => {
         <p className={`${inter.className} ${styles.content_title}`}>Elements</p>
         <div className={styles.grid}>
           {elementsMenuItems.map(({ href, label, description }) => (
-            <Link key={label} href={href} className={styles.card}>
-              <h2 className={inter.className}>
-                {label} <span>-&gt;</span>
-              </h2>
-              <p className={inter.className}>{description}</p>
-            </Link>
-          ))}
-        </div>
-      </div>
-      <div className={styles.content}>
-        <p className={`${inter.className} ${styles.content_title}`}>React {"beginner's"} guide</p>
-        <div className={styles.grid}>
-          {reactMenuItems.map(({ href, label, description }) => (
             <Link key={label} href={href} className={styles.card}>
               <h2 className={inter.className}>
                 {label} <span>-&gt;</span>

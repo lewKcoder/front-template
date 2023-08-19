@@ -1,1 +1,1 @@
-export { elementsMenuItems, reactMenuItems } from './urls';
+export { elementsMenuItems } from './urls';
