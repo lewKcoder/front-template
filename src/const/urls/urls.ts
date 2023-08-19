@@ -15,9 +15,9 @@ export const menuItems = [
     description: '様々なスタイルのチェックボックス',
   },
   {
-    href: '/elements/inputs-radio',
-    label: 'Inputs radio',
-    description: '様々なスタイルのラジオボタン',
+    href: '/elements/box-shadow',
+    label: 'Box shadow',
+    description: '様々なスタイルのボックスシャドウ',
   },
   {
     href: '/',
