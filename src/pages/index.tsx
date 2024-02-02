@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import { Home as HomeLayout } from '@/layouts/home';
+import Head from "next/head";
+import { Home as HomeLayout } from "@/layouts/home";
 
 export default function Home() {
   return (

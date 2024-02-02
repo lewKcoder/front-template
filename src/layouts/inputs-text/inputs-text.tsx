@@ -1,7 +1,7 @@
-import { FunctionComponent } from 'react';
-import { inputNames } from './data';
-import { ElementsCommonLayout } from '@/layouts/elements-common-layout';
-import styles from './styles.module.scss';
+import { FunctionComponent } from "react";
+import { inputNames } from "./data";
+import { ElementsCommonLayout } from "@/layouts/elements-common-layout";
+import styles from "./styles.module.scss";
 
 export const InputsText: FunctionComponent = () => {
   return (
@@ -21,13 +21,23 @@ export const InputsText: FunctionComponent = () => {
         <input type="text" className={styles.form_12} placeholder="form_12" />
         <input type="text" className={styles.form_13} placeholder="form_13" />
         <div className={styles.form_14}>
-          <input type="text" id="Form14" placeholder="form_14" className={styles.input} />
+          <input
+            type="text"
+            id="Form14"
+            placeholder="form_14"
+            className={styles.input}
+          />
           <label htmlFor="Form14" className={styles.label}>
             form_14
           </label>
         </div>
         <div className={styles.form_15}>
-          <input type="text" id="Form15" placeholder="form_15" className={styles.input} />
+          <input
+            type="text"
+            id="Form15"
+            placeholder="form_15"
+            className={styles.input}
+          />
           <label htmlFor="Form15" className={styles.label}>
             form_15
           </label>

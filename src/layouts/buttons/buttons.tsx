@@ -1,6 +1,6 @@
-import { FunctionComponent } from 'react';
-import styles from './styles.module.scss';
-import { ElementsCommonLayout } from '@/layouts/elements-common-layout';
+import { FunctionComponent } from "react";
+import styles from "./styles.module.scss";
+import { ElementsCommonLayout } from "@/layouts/elements-common-layout";
 
 export const Buttons: FunctionComponent = () => {
   return (
@@ -84,6 +84,7 @@ export const Buttons: FunctionComponent = () => {
         <button className={styles.button_59}>
           <span className={styles.text}>Button 59</span>
         </button>
+        <button className={styles.button_60}>Button 60</button>
       </div>
     </ElementsCommonLayout>
   );

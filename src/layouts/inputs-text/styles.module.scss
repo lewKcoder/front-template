@@ -396,7 +396,7 @@
 
       // フォームの内容に沿ったアイコンをFont Awesomeで表示
       &:before {
-        content: 'icon';
+        content: "icon";
       }
     }
   }
@@ -436,7 +436,7 @@
 
       // フォームの内容に沿ったアイコンをFont Awesomeで表示
       &:before {
-        content: 'icon';
+        content: "icon";
       }
     }
   }
@@ -591,7 +591,7 @@
 
     .input ~ .border:before,
     .input ~ .border:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -610,7 +610,7 @@
 
     .input ~ .border i:before,
     .input ~ .border i:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;

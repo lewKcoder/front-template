@@ -1,6 +1,6 @@
-import { FunctionComponent } from 'react';
-import { ElementsCommonLayout } from '../elements-common-layout';
-import styles from './styles.module.scss';
+import { FunctionComponent } from "react";
+import { ElementsCommonLayout } from "../elements-common-layout";
+import styles from "./styles.module.scss";
 
 export const Cards: FunctionComponent = () => {
   return (

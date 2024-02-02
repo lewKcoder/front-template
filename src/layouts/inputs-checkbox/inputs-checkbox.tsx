@@ -1,13 +1,18 @@
-import { FunctionComponent } from 'react';
-import { ElementsCommonLayout } from '../elements-common-layout';
-import styles from './styles.module.scss';
+import { FunctionComponent } from "react";
+import { ElementsCommonLayout } from "../elements-common-layout";
+import styles from "./styles.module.scss";
 
 export const InputsCheckbox: FunctionComponent = () => {
   return (
     <ElementsCommonLayout>
       <div className={styles.container}>
         <div className={styles.checkbox_1}>
-          <input id="Checkbox1" className={styles.checkbox} type="checkbox" aria-hidden="true" />
+          <input
+            id="Checkbox1"
+            className={styles.checkbox}
+            type="checkbox"
+            aria-hidden="true"
+          />
           <label htmlFor="Checkbox1">Checkbox 1</label>
         </div>
         <div className={styles.checkbox_2}>
@@ -61,7 +66,11 @@ export const InputsCheckbox: FunctionComponent = () => {
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
             <defs>
               <filter id="goo-12">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="4"
+                  result="blur"
+                ></feGaussianBlur>
                 <feColorMatrix
                   in="blur"
                   mode="matrix"
@@ -105,7 +114,7 @@ export const InputsCheckbox: FunctionComponent = () => {
           <label htmlFor="Checkbox12" className={styles.label}>
             Checkbox 12
           </label>
-          <svg xmlns="http://www.w3.org/2000/svg" style={{ display: 'none' }}>
+          <svg xmlns="http://www.w3.org/2000/svg" style={{ display: "none" }}>
             <symbol id="checkmark-28" viewBox="0 0 24 24">
               <path
                 stroke-linecap="round"
@@ -120,10 +129,13 @@ export const InputsCheckbox: FunctionComponent = () => {
           <span className={styles.checkbox_content}>
             <input type="checkbox" className={styles.checkbox} />
             <svg>
-              <use xlinkHref="#Checkbox13" className={styles.checkbox_content}></use>
+              <use
+                xlinkHref="#Checkbox13"
+                className={styles.checkbox_content}
+              ></use>
             </svg>
           </span>
-          <svg xmlns="http://www.w3.org/2000/svg" style={{ display: 'none' }}>
+          <svg xmlns="http://www.w3.org/2000/svg" style={{ display: "none" }}>
             <symbol id="Checkbox13" viewBox="0 0 22 22">
               <path
                 fill="none"
@@ -136,8 +148,18 @@ export const InputsCheckbox: FunctionComponent = () => {
         <div className={styles.checkbox_14}>
           <input type="checkbox" className={styles.checkbox} />
           <svg viewBox="0 0 35.6 35.6">
-            <circle className={styles.background} cx="17.8" cy="17.8" r="17.8"></circle>
-            <circle className={styles.stroke} cx="17.8" cy="17.8" r="14.37"></circle>
+            <circle
+              className={styles.background}
+              cx="17.8"
+              cy="17.8"
+              r="17.8"
+            ></circle>
+            <circle
+              className={styles.stroke}
+              cx="17.8"
+              cy="17.8"
+              r="14.37"
+            ></circle>
             <polyline
               className={styles.check}
               points="11.78 18.12 15.55 22.23 25.17 12.87"
@@ -224,7 +246,11 @@ export const InputsCheckbox: FunctionComponent = () => {
         </div>
         <div className={styles.checkbox_24}>
           <div className={styles.block}>
-            <input type="checkbox" id="Checkbox24" className={styles.checkbox} />
+            <input
+              type="checkbox"
+              id="Checkbox24"
+              className={styles.checkbox}
+            />
             <label htmlFor="Checkbox24" className={styles.label}></label>
           </div>
         </div>
@@ -272,7 +298,14 @@ export const InputsCheckbox: FunctionComponent = () => {
           <input type="checkbox" className={styles.checkbox} id="Checkbox31" />
           <label htmlFor="Checkbox31" className={styles.label}>
             <svg viewBox="0 0 65 65" height="30" width="30">
-              <rect x="7" y="7" width="50" height="50" stroke="black" fill="none" />
+              <rect
+                x="7"
+                y="7"
+                width="50"
+                height="50"
+                stroke="black"
+                fill="none"
+              />
               <g transform="translate(-23,-967.36216)" id="layer1-60">
                 <path
                   id="path4146"
@@ -284,14 +317,21 @@ export const InputsCheckbox: FunctionComponent = () => {
                 />
               </g>
             </svg>
-            <span>Checkbox{''}31</span>
+            <span>Checkbox{""}31</span>
           </label>
         </div>
         <div className={styles.checkbox_32}>
           <input type="checkbox" className={styles.checkbox} id="Checkbox32" />
           <label htmlFor="Checkbox32" className={styles.label}>
             <svg width="45" height="45" viewBox="0 0 95 95">
-              <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />
+              <rect
+                x="30"
+                y="20"
+                width="50"
+                height="50"
+                stroke="black"
+                fill="none"
+              />
               <g transform="translate(0,-952.36222)">
                 <path
                   d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4 "
@@ -309,7 +349,14 @@ export const InputsCheckbox: FunctionComponent = () => {
           <input type="checkbox" className={styles.checkbox} id="Checkbox33" />
           <label htmlFor="Checkbox33" className={styles.label}>
             <svg width="43" height="43" viewBox="0 0 90 90">
-              <rect x="30" y="20" width="50" height="50" stroke="black" fill="none" />
+              <rect
+                x="30"
+                y="20"
+                width="50"
+                height="50"
+                stroke="black"
+                fill="none"
+              />
               <g transform="translate(0,-952.36218)">
                 <path
                   d="m 13,983 c 33,6 40,26 55,48 "
@@ -372,13 +419,21 @@ export const InputsCheckbox: FunctionComponent = () => {
         </div>
         <div className={styles.checkbox_37}>
           <div className={styles.checkbox_content}>
-            <input type="checkbox" id="Checkbox37" className={styles.checkbox} />
+            <input
+              type="checkbox"
+              id="Checkbox37"
+              className={styles.checkbox}
+            />
             <label htmlFor="Checkbox37" className={styles.label}></label>
           </div>
         </div>
         <div className={styles.checkbox_38}>
           <div className={styles.round}>
-            <input type="checkbox" id="Checkbox38" className={styles.checkbox} />
+            <input
+              type="checkbox"
+              id="Checkbox38"
+              className={styles.checkbox}
+            />
             <label htmlFor="Checkbox38" className={styles.label}></label>
           </div>
         </div>

@@ -19,7 +19,7 @@
     }
 
     .checkbox + label:before {
-      content: '';
+      content: "";
       display: inline-block;
       vertical-align: sub;
       height: 1.15em;
@@ -27,7 +27,8 @@
       margin-right: 0.6em;
       color: rgba(0, 0, 0, 0.275);
       border: solid 0.06em;
-      box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em inset, 0 0 0 0.07em transparent inset;
+      box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em inset,
+        0 0 0 0.07em transparent inset;
       border-radius: 0.2em;
       background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve" fill="white" viewBox="0 0 9 9"><rect x="0" y="4.3" transform="matrix(-0.707 -0.7072 0.7072 -0.707 0.5891 10.4702)" width="4.3" height="1.6" /><rect x="2.2" y="2.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 12.1877 2.9833)" width="6.1" height="1.7" /></svg>')
           no-repeat center,
@@ -59,15 +60,15 @@
 
     .checkbox:focus + label:before {
       box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset,
-        0 0 0 0.07em rgba(0, 0, 0, 0.1) inset, 0 0 0 3.3px rgba(65, 159, 255, 0.55),
-        0 0 0 5px rgba(65, 159, 255, 0.3);
+        0 0 0 0.07em rgba(0, 0, 0, 0.1) inset,
+        0 0 0 3.3px rgba(65, 159, 255, 0.55), 0 0 0 5px rgba(65, 159, 255, 0.3);
     }
 
     .checkbox:focus:active + label:before,
     .checkbox:focus + label:active:before {
       box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset,
-        0 0 0 0.07em rgba(0, 0, 0, 0.1) inset, 0 0 0 3.3px rgba(65, 159, 255, 0.55),
-        0 0 0 5px rgba(65, 159, 255, 0.3);
+        0 0 0 0.07em rgba(0, 0, 0, 0.1) inset,
+        0 0 0 3.3px rgba(65, 159, 255, 0.55), 0 0 0 5px rgba(65, 159, 255, 0.3);
     }
 
     .checkbox:disabled + label:before {
@@ -115,7 +116,7 @@
 
     .checkbox::before {
       bottom: -6px;
-      content: '';
+      content: "";
       left: -6px;
       position: absolute;
       right: -6px;
@@ -130,7 +131,7 @@
     .checkbox::after {
       background-color: #fff;
       border-radius: 50%;
-      content: '';
+      content: "";
       height: 14px;
       left: 3px;
       position: absolute;
@@ -178,7 +179,7 @@
       transform: translate3d(0, 0, 0);
     }
     .toggle:before {
-      content: '';
+      content: "";
       position: relative;
       top: 3px;
       left: 3px;
@@ -202,7 +203,7 @@
       transition: all 0.2s ease;
     }
     .toggle span:before {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       margin: -18px;
@@ -221,7 +222,8 @@
     .checkbox:checked + .toggle span {
       background: #4f2edc;
       transform: translateX(20px);
-      transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
+      transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25),
+        background 0.15s ease;
       box-shadow: 0 3px 8px rgba(79, 46, 220, 0.2);
     }
     .checkbox:checked + .toggle span:before {
@@ -367,7 +369,7 @@
     .checkbox + .label:before {
       position: relative;
       display: block;
-      content: '';
+      content: "";
       width: 50%;
       height: 100%;
     }
@@ -469,7 +471,7 @@
     }
     .label::before,
     .label::after {
-      content: '';
+      content: "";
       position: absolute;
     }
     .label::before {
@@ -503,7 +505,7 @@
     }
     .checkbox::before,
     .checkbox::after {
-      content: '';
+      content: "";
       position: absolute;
       height: 2px;
       top: auto;
@@ -614,16 +616,17 @@
     @keyframes firework-11 {
       0% {
         opacity: 1;
-        box-shadow: 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0,
-          0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0;
+        box-shadow: 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0,
+          0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0;
       }
       30% {
         opacity: 1;
       }
       100% {
         opacity: 0;
-        box-shadow: 0 -15px 0 0px #4f29f0, 14px -8px 0 0px #4f29f0, 14px 8px 0 0px #4f29f0,
-          0 15px 0 0px #4f29f0, -14px 8px 0 0px #4f29f0, -14px -8px 0 0px #4f29f0;
+        box-shadow: 0 -15px 0 0px #4f29f0, 14px -8px 0 0px #4f29f0,
+          14px 8px 0 0px #4f29f0, 0 15px 0 0px #4f29f0, -14px 8px 0 0px #4f29f0,
+          -14px -8px 0 0px #4f29f0;
       }
     }
   }
@@ -682,8 +685,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      -webkit-filter: url('#goo-12');
-      filter: url('#goo-12');
+      -webkit-filter: url("#goo-12");
+      filter: url("#goo-12");
       transform: translate3d(0, 0, 0);
       pointer-events: none;
     }
@@ -718,14 +721,15 @@
     @keyframes splash-12 {
       40% {
         background: #866efb;
-        box-shadow: 0 -18px 0 -8px #866efb, 16px -8px 0 -8px #866efb, 16px 8px 0 -8px #866efb,
-          0 18px 0 -8px #866efb, -16px 8px 0 -8px #866efb, -16px -8px 0 -8px #866efb;
+        box-shadow: 0 -18px 0 -8px #866efb, 16px -8px 0 -8px #866efb,
+          16px 8px 0 -8px #866efb, 0 18px 0 -8px #866efb,
+          -16px 8px 0 -8px #866efb, -16px -8px 0 -8px #866efb;
       }
       100% {
         background: #866efb;
         box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent,
-          32px 16px 0 -10px transparent, 0 36px 0 -10px transparent, -32px 16px 0 -10px transparent,
-          -32px -16px 0 -10px transparent;
+          32px 16px 0 -10px transparent, 0 36px 0 -10px transparent,
+          -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
       }
     }
   }
@@ -750,7 +754,7 @@
       border: 2px solid #fff;
       border-top: none;
       border-right: none;
-      content: '';
+      content: "";
       height: 6px;
       left: 8px;
       opacity: 0;
@@ -803,7 +807,7 @@
     .slider:before {
       background-color: #fff;
       bottom: 4px;
-      content: '';
+      content: "";
       height: 26px;
       left: 4px;
       position: absolute;
@@ -861,7 +865,7 @@
     }
 
     .label span:before {
-      content: '';
+      content: "";
       width: 0px;
       height: 2px;
       border-radius: 2px;
@@ -875,7 +879,7 @@
     }
 
     .label span:after {
-      content: '';
+      content: "";
       width: 0;
       height: 2px;
       border-radius: 2px;
@@ -958,13 +962,14 @@
       border-radius: 50%;
       box-shadow: 0 var(--shadow) #ffbeb8;
       cursor: pointer;
-      transition: 0.2s ease transform, 0.2s ease background-color, 0.2s ease box-shadow;
+      transition: 0.2s ease transform, 0.2s ease background-color,
+        0.2s ease box-shadow;
       overflow: hidden;
       z-index: 1;
     }
 
     .label:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 50%;
       right: 0;
@@ -1003,7 +1008,7 @@
 
     .item:before,
     .item:after {
-      content: '';
+      content: "";
       position: absolute;
       background-color: #fff;
       border-radius: 2px;
@@ -1086,7 +1091,7 @@
     }
 
     .label:after {
-      content: '';
+      content: "";
       height: var(--size);
       width: var(--size);
       margin-right: 8px;
@@ -1131,7 +1136,7 @@
     }
 
     .checkbox_content:after {
-      content: '';
+      content: "";
       width: 100%;
       padding-top: 100%;
       display: block;
@@ -1309,12 +1314,13 @@
       border-radius: 0.1em;
       width: 1.5em;
       height: 1.5em;
-      transition: box-shadow var(--t-base) var(--e-out), background-color var(--t-base);
+      transition: box-shadow var(--t-base) var(--e-out),
+        background-color var(--t-base);
       box-shadow: 0 0 0 0 var(--c-primary-10-percent-opacity);
     }
 
     .svg_content:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0.5em;
       left: 0.5em;
@@ -1424,7 +1430,7 @@
     .label:before {
       position: relative;
       display: block;
-      content: '';
+      content: "";
       width: 44%;
       height: 100%;
     }
@@ -1454,13 +1460,13 @@
     .checkbox + .label:after {
       border-radius: 2em;
       background: #fff;
-      transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease,
-        margin 0.3s ease;
+      transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        padding 0.3s ease, margin 0.3s ease;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     }
 
     .checkbox + .label:before {
-      content: 'No';
+      content: "No";
       left: 28px;
       color: var(--g04);
       transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1487,7 +1493,7 @@
     }
 
     .checkbox:checked + .label:before {
-      content: 'Yes';
+      content: "Yes";
       left: 4px;
       color: #fff;
     }
@@ -1554,7 +1560,7 @@
 
     .checkbox:before,
     .checkbox:after {
-      content: '';
+      content: "";
       position: absolute;
       background: var(--borderColor);
       width: calc(var(--borderWidth) * 3);
@@ -1566,26 +1572,30 @@
 
     .checkbox:before {
       transform: rotate(45deg)
-        translate(calc(var(--borderWidth) / -2), calc(var(--borderWidth) / -2)) scaleX(0);
+        translate(calc(var(--borderWidth) / -2), calc(var(--borderWidth) / -2))
+        scaleX(0);
       transition: transform 200ms ease-in 200ms;
     }
 
     .checkbox:after {
       width: calc(var(--borderWidth) * 5);
-      transform: rotate(-45deg) translateY(calc(var(--borderWidth) * 2)) scaleX(0);
+      transform: rotate(-45deg) translateY(calc(var(--borderWidth) * 2))
+        scaleX(0);
       transform-origin: left center;
       transition: transform 200ms ease-in;
     }
 
     .checkbox:checked:before {
       transform: rotate(45deg)
-        translate(calc(var(--borderWidth) / -2), calc(var(--borderWidth) / -2)) scaleX(1);
+        translate(calc(var(--borderWidth) / -2), calc(var(--borderWidth) / -2))
+        scaleX(1);
       transition: transform 200ms ease-in;
     }
 
     .checkbox:checked:after {
       width: calc(var(--borderWidth) * 5);
-      transform: rotate(-45deg) translateY(calc(var(--borderWidth) * 2)) scaleX(1);
+      transform: rotate(-45deg) translateY(calc(var(--borderWidth) * 2))
+        scaleX(1);
       transition: transform 200ms ease-out 200ms;
     }
 
@@ -1643,7 +1653,7 @@
 
     .label .checkbox + div:before,
     .label .checkbox + div:after {
-      content: '';
+      content: "";
       width: 3px;
       height: 16px;
       background: #000;
@@ -1796,7 +1806,7 @@
     }
 
     .label span:first-child:before {
-      content: '';
+      content: "";
       width: 100%;
       height: 100%;
       background: #506eec;
@@ -1858,7 +1868,7 @@
       transform: translate3d(0, 0, 0);
     }
     .label:before {
-      content: '';
+      content: "";
       position: absolute;
       top: -15px;
       left: -15px;
@@ -1926,7 +1936,7 @@
 
     .label:before {
       box-sizing: border-box;
-      content: ' ';
+      content: " ";
       position: absolute;
       top: 0.3em;
       left: 0;
@@ -2001,7 +2011,8 @@
 
     .checkbox:not(:checked):hover {
       border-color: transparent;
-      background: linear-gradient(#fff, #fff) padding-box, var(--gradient) border-box;
+      background: linear-gradient(#fff, #fff) padding-box,
+        var(--gradient) border-box;
     }
   }
 
@@ -2043,7 +2054,7 @@
 
     .label:before {
       transition: 0.3s ease;
-      content: '';
+      content: "";
       width: calc((var(--size) / 2) - 10px);
       height: calc((var(--size) / 2) - 10px);
       position: absolute;
@@ -2075,7 +2086,7 @@
     }
 
     .toggle:before {
-      content: '';
+      content: "";
       position: relative;
       top: 1px;
       left: 1px;
@@ -2162,7 +2173,7 @@
     }
 
     .checkmark:after {
-      content: '';
+      content: "";
       position: absolute;
       opacity: 0;
     }
@@ -2215,7 +2226,7 @@
 
     .slider:before {
       position: absolute;
-      content: '';
+      content: "";
       height: var(--size-of-icon, 1.4em);
       width: var(--size-of-icon, 1.4em);
       border-radius: 20px;
@@ -2231,7 +2242,9 @@
     }
 
     .checkbox:checked + .slider:before {
-      left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+      left: calc(
+        100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em))
+      );
       background: #303136;
       box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
     }
@@ -2251,7 +2264,8 @@
       cursor: pointer;
       height: 50px;
       width: 50px;
-      box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 70, 0.12);
+      box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+        10px 10px 15px rgba(0, 0, 70, 0.12);
       border-radius: 50%;
       border: 8px solid #ececec;
       outline: none;
@@ -2270,7 +2284,7 @@
     .label .checkbox::after {
       transition: 0.5s;
       font-family: monospace;
-      content: '';
+      content: "";
       color: #7a7a7a;
       font-size: 25px;
       left: 0.45em;
@@ -2283,8 +2297,10 @@
     }
 
     .label .checkbox:checked {
-      box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12),
-        inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+      box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+        10px 10px 15px rgba(70, 70, 70, 0.12),
+        inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+        inset 10px 10px 15px rgba(70, 70, 70, 0.12);
       transition: 0.5s;
     }
 
@@ -2330,14 +2346,14 @@
 
     .label .checkbox:checked + .checkmark {
       background: black;
-      box-shadow: -10px -10px var(--spread) 0px #5b51d8, 0 -10px var(--spread) 0px #833ab4,
-        10px -10px var(--spread) 0px #e1306c, 10px 0 var(--spread) 0px #fd1d1d,
-        10px 10px var(--spread) 0px #f77737, 0 10px var(--spread) 0px #fcaf45,
-        -10px 10px var(--spread) 0px #ffdc80;
+      box-shadow: -10px -10px var(--spread) 0px #5b51d8,
+        0 -10px var(--spread) 0px #833ab4, 10px -10px var(--spread) 0px #e1306c,
+        10px 0 var(--spread) 0px #fd1d1d, 10px 10px var(--spread) 0px #f77737,
+        0 10px var(--spread) 0px #fcaf45, -10px 10px var(--spread) 0px #ffdc80;
     }
 
     .checkmark::after {
-      content: '';
+      content: "";
       position: absolute;
       display: none;
     }
@@ -2400,7 +2416,7 @@
     .slider:before {
       box-sizing: border-box;
       position: absolute;
-      content: '';
+      content: "";
       height: var(--switch_height);
       width: var(--switch_height);
       border: 2px solid var(--outline_color);
@@ -2427,11 +2443,13 @@
     }
 
     .checkbox:checked + .slider:before {
-      transform: translateX(calc(var(--switch_width) - var(--switch_height))) translateY(-0.2em);
+      transform: translateX(calc(var(--switch_width) - var(--switch_height)))
+        translateY(-0.2em);
     }
 
     .checkbox:hover:checked + .slider:before {
-      transform: translateX(calc(var(--switch_width) - var(--switch_height))) translateY(-0.3em);
+      transform: translateX(calc(var(--switch_width) - var(--switch_height)))
+        translateY(-0.3em);
       box-shadow: 0 0.3em 0 var(--outline_color);
     }
   }
@@ -2567,7 +2585,7 @@
 
     .slider:before {
       position: absolute;
-      content: '';
+      content: "";
       height: 1.5em;
       width: 1.4em;
       border-radius: 0.3em;
@@ -2622,7 +2640,7 @@
 
     .slider:before {
       position: absolute;
-      content: '';
+      content: "";
       height: 1.4em;
       width: 1.4em;
       border-radius: 20px;
@@ -2745,7 +2763,7 @@
 
     .checkbox_content .label::before,
     .checkbox_content .label::after {
-      content: '· ·';
+      content: "· ·";
       position: absolute;
       overflow: hidden;
       left: calc(0.15 * var(--size));
@@ -2753,7 +2771,7 @@
       height: var(--size);
       letter-spacing: calc(-0.04 * var(--size));
       color: #9b9b9b;
-      font-family: 'Times New Roman', serif;
+      font-family: "Times New Roman", serif;
       z-index: 2;
       font-size: calc(0.6 * var(--size));
       border-radius: 0;
@@ -2762,7 +2780,7 @@
     }
 
     .checkbox_content .label::after {
-      content: '●';
+      content: "●";
       top: calc(0.65 * var(--size));
       left: calc(0.2 * var(--size));
       height: calc(0.1 * var(--size));
@@ -2808,7 +2826,7 @@
       border: 2px solid #fff;
       border-top: none;
       border-right: none;
-      content: '';
+      content: "";
       height: 6px;
       left: 8px;
       opacity: 0;
